@@ -1,0 +1,18 @@
+{
+	"appenders": {
+		"out": { 
+			"type": "stdout"			
+		},
+		"app": { 
+			"type": "dateFile", 
+			"filename": "./log/application.log",
+			"keepFileExt" : "true"
+		}
+	},
+	"categories": {
+		"default": { 
+			"appenders": [ "out", "app" ], 
+			"level": "debug" 
+		}
+	}
+}
